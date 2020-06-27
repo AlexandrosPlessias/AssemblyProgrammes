@@ -1,0 +1,72 @@
+Microsoft (R) Macro Assembler Version 9.00.21022.08	    03/27/14 21:59:47
+"Add and Subtract (Ergasia_1_a.asm			     Page 1 - 1
+
+
+				TITLE Add and Subtract (Ergasia_1_a.asm)
+				; This program adds and subtracts 32-bit integers.
+
+				; From Intel 386 until now.
+				.386  
+
+				; Protected mode , Call from MS-Windows Functions.
+				.model flat, stdcall 
+
+				; Memory 'allocation' size = 4096. 
+				.stack 4096
+
+				;Protopype & Input 
+				ExitProcess PROTO, dwExitCode:DWORD
+				DumpRegs PROTO
+
+ 00000000			.code
+ 00000000				main PROC
+					
+ 00000000  B8 00010000				mov eax, 10000h ; Eax now is 10000h .
+ 00000005  05 00050000				add eax, 50000h ; Eax now is 10000h + 50000h = 60000h .
+ 0000000A  2D 00030000				sub eax, 30000h ; Eax now is 10000h + 50000h - 30000h = 30000h .
+ 0000000F  E8 00000000 E			call DumpRegs
+
+						INVOKE ExitProcess,0
+ 0000001B				main ENDP
+					END main
+Microsoft (R) Macro Assembler Version 9.00.21022.08	    03/27/14 21:59:47
+"Add and Subtract (Ergasia_1_a.asm			     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+FLAT . . . . . . . . . . . . . .	GROUP
+STACK  . . . . . . . . . . . . .	32 Bit	 00001000 DWord	  Stack	  'STACK'	 
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000000 DWord	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 0000001B DWord	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+DumpRegs . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ExitProcess  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000001B Public STDCALL
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000003h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+
+	   0 Warnings
+	   0 Errors

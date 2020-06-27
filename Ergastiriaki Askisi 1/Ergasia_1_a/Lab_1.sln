@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arch Lab 2 Ergasia_1", "..\..\..\..\..\Documents\Visual Studio 2008\Projects\Arch Lab 2 Ergasia_1\Arch Lab 2 Ergasia_1.vcproj", "{7706683D-2109-40C8-8B90-B3798A4C76A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7706683D-2109-40C8-8B90-B3798A4C76A0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7706683D-2109-40C8-8B90-B3798A4C76A0}.Debug|Win32.Build.0 = Debug|Win32
+		{7706683D-2109-40C8-8B90-B3798A4C76A0}.Release|Win32.ActiveCfg = Release|Win32
+		{7706683D-2109-40C8-8B90-B3798A4C76A0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
